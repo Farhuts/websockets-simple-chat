@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WebSockets</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  </head>
+  <style>
+  body {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    color: #555;
+  }
+
+  #chat-container{
+      max-width: 600px;
+      padding: 1%;
+      margin: 30px auto;
+      border: 1px solid #ddd;
+      box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+      border-radius: 2px;
+  }
+  #chat-window{
+      height: 400px;
+      overflow: auto;
+      background: #f9f9f9;
+  }
+  strong {
+    font-weight: 800;
+    color: 'pink';
+  }
+
+  </style>
+  <body>
+    <div class="conatiner" id="chat-container">
+      <div id="chat-window">
+          <div id="output"></div>
+          <div id="answer"></div>
+        </div>
+          <input id="name" type="text" placeholder="Name"/>
+          <input id="message" type="text" placeholder="Message" />
+        <button class="btn waves-effect waves-light" id="send" type="submit" name="action">Send
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    <script src="/chat.js"></script>
+  </body>
+</html>
