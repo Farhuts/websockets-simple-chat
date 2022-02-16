@@ -3,7 +3,7 @@
 ![alt text](public/images/chat.gif)
 
 ___________________________________________________________
-run **npm install** to install the dependencies 
+run **npm install** to install the dependencies
 ___________________________________________________________
-run **nodemon** to start the server
+run **npx nodemon** to start the server
 ___________________________________________________________
